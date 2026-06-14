@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+.venv/
+venv/
+.cache/
+*.py[cod]
+
+# Node
+node_modules/
+dist/
+
+# Manim generated media
+media/
+**/media/
+work/
+**/work/
+
+# Environment files
+.env
+.env.*

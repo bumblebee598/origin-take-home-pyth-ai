@@ -1,0 +1,10 @@
+anthropic
+claude-agent-sdk
+fastapi
+gtts
+manim
+mutagen
+pymupdf
+python-dotenv
+python-multipart
+uvicorn[standard]
