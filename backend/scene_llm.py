@@ -56,7 +56,7 @@ Given a research paper, produce a plan for a 3-4 minute video a general technica
 
 
 def plan_video(paper_text: str) -> VideoPlan:
-    api_key = os.getenv("anthropic_api_key")
+    api_key = os.getenv("ANTHROPIC_API_KEY") 
     if not api_key:
         raise RuntimeError("Missing Anthropic API key. Set ANTHROPIC_API_KEY in backend/.env.")
 

@@ -5,6 +5,18 @@ Upload a research paper (PDF) and get back a narrated, animated explainer video.
 - **Plan** — Claude reads the paper and produces a structured storyboard (title, summary, and scene-by-scene beats).
 - **Render** — a Claude agent writes [Manim](https://www.manim.community/) code for each beat, renders it, adds text-to-speech narration, and stitches everything into one MP4.
 
+## Demo
+
+https://github.com/user-attachments/assets/8996912c-0880-4114-98b1-9cbdee9e0f14
+
+▶️ Sample output — an explainer generated from a deep-learning paper (also in [`assets/final.mp4`](assets/final.mp4)).
+
+## Screenshots
+
+| Upload | Analyzing | Storyboard | Video |
+|---|---|---|---|
+| ![Upload](assets/01-upload.png) | ![Analyzing](assets/02-analyzing.png) | ![Storyboard](assets/03-plan.png) | ![Video](assets/04-video.png) |
+
 ## Stack
 
 - **Backend** — FastAPI + Manim + Claude Agent SDK (`backend/`)

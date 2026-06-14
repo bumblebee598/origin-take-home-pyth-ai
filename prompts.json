@@ -1,4 +1,0 @@
-{
-   "1" : "Please build the scaffolding for a Python Fast API backend and react frontend. have two folders - backend and frontend. backend should have main.py where the routes are defined - just add a dummy health endpoint for now and the frontend should I have a dummy React project loaded in. After this We will start building",
-   "2" : ""
-}

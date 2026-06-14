@@ -65,7 +65,7 @@ def _summarize(message):
 
 
 def _ensure_anthropic_env() -> str:
-    api_key = os.getenv("anthropic_api_key")
+    api_key = os.getenv("ANTHROPIC_API_KEY") 
     if not api_key:
         raise RuntimeError("Missing Anthropic API key. Set ANTHROPIC_API_KEY in backend/.env.")
 

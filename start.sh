@@ -8,14 +8,20 @@ FRONTEND_DIR="$ROOT_DIR/frontend"
 BACKEND_HOST="127.0.0.1"
 BACKEND_PORT="8000"
 
+# --- Run the one-time backend setup if no virtual environment exists yet ---
+if [ ! -d "$BACKEND_DIR/.venv" ] && [ ! -d "$BACKEND_DIR/venv" ]; then
+  echo "No backend virtual environment found — running one-time setup..."
+  (cd "$BACKEND_DIR" && ./setup.sh)
+fi
+
 # --- Locate the backend virtual environment (setup.sh creates .venv) ---
 if [ -d "$BACKEND_DIR/.venv" ]; then
   VENV_DIR="$BACKEND_DIR/.venv"
 elif [ -d "$BACKEND_DIR/venv" ]; then
   VENV_DIR="$BACKEND_DIR/venv"
 else
-  echo "No backend virtual environment found."
-  echo "Run the one-time setup first:"
+  echo "Backend setup did not produce a virtual environment."
+  echo "Run it manually to see the error:"
   echo "  cd backend && ./setup.sh"
   exit 1
 fi
