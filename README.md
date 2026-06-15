@@ -9,7 +9,9 @@ Upload a research paper (PDF) and get back a narrated, animated explainer video.
 
 https://github.com/user-attachments/assets/8996912c-0880-4114-98b1-9cbdee9e0f14
 
-▶️ Sample output — an explainer generated from a deep-learning paper (also in [`assets/final.mp4`](assets/final.mp4)).
+▶️ Sample output — also saved in [`assets/final.mp4`](assets/final.mp4).
+
+📄 Source paper: [Deep Learning: An Introduction for Applied Mathematicians](assets/deep%20learning%20for%20applied%20math.pdf) — the exact PDF used to generate the demo above.
 
 ## Screenshots
 
